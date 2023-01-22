@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "remote-system-monitor-ca3d8",
+  "private_key_id": "cbbedddb56707d85cbe7c0da5d8dfc6efa4b037e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDOROutRazBiqj/\nETzJ6l+Zn0pel/d6hBPrkWRPf6A7NCuANH1UCh4tZ6EUK0Mrkp6oL/q7yQ/P6Jqb\nMurWiPWcuGmB32WzPej1CftNaLn00QdWEF6wfjvC6Y09+Ukn6QqiAu0qo152x6Kg\nCBHjRoLDjHZbyDqHzXobSRBGlL9lUqZHgJsGANgEhE8fNwmSwKCNIAXyiXhxIUk0\nAnYjf1RlsGxTYNjG1OE58P3vCWEKZ1t29uGefBH7n+mutcUDMlbePSCHrZbR7yeM\nxFEYoi2AKGx/80g3jwt3y3SF9bAb5U6F0qEBHkEgT6dgpBH1l0+Lv1nJAn2N2R68\nrEcBT5LtAgMBAAECggEAEqJOSi53r1pX7wb/H1yRe17VCJug60wAQrE1RytH7eFG\nJsRXKB7r3/0zI4/O9yI9PANtmsZMq+MfCHM+nNftnFVajrWASgOHRo+6yKDz36Z8\ni61Z6IbW3kJcFKOvFLBsWft6snXkxEU/r0ZbW1VU3daUILGDfB43cDyXAFFSwxPd\nJ7h1kH9J1CKzlq1iCU5ZtskOXs0SxXNkQO7kXQoFKmOAYFXP/vGYjSgffSDOP2Mf\nuah0vLYsXmkmChRiJ0s1gBSwbQsQ3w1tbQy4sOMH4PT+AybOcny8kQknNh4TXAK7\nxg25xw7TxsAvz6kRiMAjVKc4EElIYlySPBbmf9SdbwKBgQD8OCTXiSulAvWWCvQr\nemxhqFrjZJ+UDd94gox8eI4b3qM8AD15h2eexQD8cwd2OFOs9u6ggL8BjLOZG/1Z\nXwi021aDV+TwDqRnq1wNpKx5dsKzXtZkF/AobGjqewhkarYKE03WMcT9BT/jnYyZ\nXLlJVNCgntt+JsdSwIdTutiofwKBgQDRXHMfTwxm8KvQQsRAt2QMg32swRcTCs2v\nuwg4aU9CENlPuUiWR9rDmj7paSRthor5jUb/4cpr98aRmHl/LYpu/2lvYskFzGGJ\nqLa7ofqOZa0c8RTdqwnslrGBcqr9Hz87a2Jb8/fVMVpqSMswIqoXCzcTTB+pQ1sE\n1oqq52AukwKBgQC2qVaNPkt8gwsnMiGph00M4OeJ/arQh8eLOEjUMF8C8heX8biT\n1iuGQbi4G/qQdLSs9FzXosYyMhszzKCL5BajHKKoFrS34nLQnbraKqO6h/bz/sAX\n13pXXEQTZS0rxFi4LUjW0k6OzAl8J/LWct/Bqwo4+TOPRjhexw565jvYswKBgQDL\nnGbV5zH/l0bxl014RyMFTIhYD74aJeKean53JmwPq4U9FMx0Y1Nt8kAHDtt/rV7R\njsWjK/uKf4HdrXVT6317r+jhjChG/FtL3wpAdyrPfDEdOZV6c9KGBpSBeXy0CcSc\nTDZviVjZPVNalIsPuFbFbIHWwaz1F+2YSfK4fae8AwKBgQCNZpu6ytvn5HRTbMov\nYqrfWhGyQ+MHSrCthmnRw5ELDevwNkr3WOANoVxBWz/66SzckLMnPbPny3gOYI6l\nUo/Og3Tpupjb/ERcjt6N3JsByjODKEFa2xcptZEYFemTJPHzqCt3RSaRtpjbGRug\nCAjG7Q5DbTlgsqPbEC7Uk08Cwg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-wdi2g@remote-system-monitor-ca3d8.iam.gserviceaccount.com",
+  "client_id": "108794021301745494106",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-wdi2g%40remote-system-monitor-ca3d8.iam.gserviceaccount.com"
+}
