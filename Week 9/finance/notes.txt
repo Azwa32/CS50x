@@ -1,0 +1,175 @@
+API KEY - pk_a4474124e1734f4d8d0690a3eab74c25
+
+export API_KEY=pk_a4474124e1734f4d8d0690a3eab74c25
+
+
+.schema
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    username TEXT NOT NULL,
+    hash TEXT NOT NULL,
+    cash NUMERIC NOT NULL DEFAULT 10000.00
+    );
+CREATE TABLE sqlite_sequence(
+    name,
+    seq
+    );
+CREATE UNIQUE INDEX username ON users (
+    username
+    );
+
+
++----+----------+------+-------+
+| id | username | hash | cash  |
++----+----------+------+-------+
+| 1  | aa       | aa   | 10000 |
+| 2  | vv       | vv   | 10000 |
+| 3  | cc       | cc   | 10000 |
+| 4  | kk       | kk   | 10000 |
+| 5  | aaa      | aaa  | 10000 |
+| 6  | gg       | gg   | 10000 |
++----+----------+------+-------+
+
+
+>TODO< - see week 9 background
+register
+quote
+buy
+index
+sell
+history
+personal touch
+
+>app.py<
+Defines a Flask web application
+Defines db to connect to SQLite databases
+Use "db.execute" to execute a SQL statement
+Defines all web application's routes with @app.route
+Each route has request methods eg GET POST
+login and logout are already inplemented
+
+>helpers.py<
+Defines helper functions the application can use
+apology displays an error message to the user
+login_required requires login for a given route
+lookup uses an API to get a current stock quote
+usd formats number as US dollars
+
+>finance.db<
+SQlite database for storing application data
+Includes a usere table to store each users id, username, hash, cash
+New tables can be added with create table
+
+>templates<
+Contains HTML templates
+layout.html defines the structure for each page
+Other pages can use {% extends "layout.html" %} to add a title and main content to existing layout
+
+---------------
+Features
+
+*Register
+When requested via GET display registration form
+When form is submitted via POST, check for possible errors and insert the new user into the users table
+Log user in
+-Create a new template for registration
+-Borrow from login.html
+-User should be prompted for username, password, and a confirmation.
+
+*accessing form data
+HTML
+<input name="password" ... />
++
+Python
+request.form.get("password")
+
+*checking for errors
+If any field is left blank return an apology
+If password and confirmation don't match, return and apology
+If the username is already taken, return an apology
+
+*Security
+Database should never store plain text password
+Use generate_password_hash to generate a hash of the password
+
+*Add user to Database
+Use db.execute to execute a SQL statement
+Use ? in statement a placeholders for values
+
+*Log User In
+session["user_id"] keeps track of wich user is logged in
+
+*quote
+When requested via GET, diplay form to request a stock quote
+When form is submitted via post, lookup the stock symbol by calling the lockup function, and display the results
+
+*lookup
+lookup takes a stock symbol and returns a stock quote
+If lookup is successful, function returns a dictionary with name, price, symbol
+If lookup is unsuccessful, function returns None / Appology
+
+*Passing Values Into Templates
+Python
+return render_template("hello.html", name="Brian")
+
+Jinja Template
+<p>hello, {{name}}</p>
+
+*buy
+When requested via GET, display form to buy a stock
+When form is submitted via POST, purchase the stock so long as the user can afford it
+
+*Buy Form
+Ask for symbol and number of shares
+Check for valid input
+
+*Adding New SQL Tables
+Decide on table name(s) and fields
+Use CREATE TABLE to add new table to database
+Use appropriate SQL types
+
+*Add stock to portfolio
+Ensure user has enough cash to afford stock
+If user cant afford stock return an apology
+Run SQL statement on database to purchase stock
+Update cash to reflect purchased stock
+
+*index
+Display HTML table with
+- all stocks owned
+- number of shares of each stock
+- current price of each stock
+- total value of each holding
+Display the users current cash balance
+Display total value of stocks and cash together
+
+Looping in template
+
+Python
+return render_template("hello.html",
+    contacts=[{"name": "Brian", "house": "Winthrop"},
+              {"name": "David", "house": "Mather"}])
+
+Jinja Template
+{% for contract in contracts %}
+    <p>{{ contact.name }} lives in {{ contact.house }}</p>
+{% endfor %}
+
+*Sell
+When requested via GET, display form to sell a stock
+When form is submitted via POST, check for errors and sell the specified number of shares of stock and update the users cash balance
+errors?
+Check user has enough shares to sell
+
+*History
+Display a table with a history of all transactions, listing one row for every buy and every sell
+Implementation depends on how your database is structured
+
+*Personal Touch
+Allow users to change passwords
+Allow users to add cash
+
+
+Staff solution
+https://finance.cs50.net/login
