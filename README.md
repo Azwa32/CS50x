@@ -1,6 +1,6 @@
 This is my collection of problems from the Harvard CS50x Introduction to Computer Science
 
-In the cource you are given a Brief of what the code must do. You are then given some boiler plate code to begin with to allow you to get straight to the problem.
+In the cource you are given a Brief of what the code must do. You are then given some boiler plate code to begin with to allow you to get straight to solving the problem.
 
 I found the course to be a great learning experience and would reccomend anyone who is thinking about computer science to give it a go.
 
