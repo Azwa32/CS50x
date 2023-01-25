@@ -1,6 +1,6 @@
 CS50 Link: https://cs50.harvard.edu/x/2022/weeks/0/
 
-Breif:
+Brief:
 
 Scratch
 It’s time to choose your own adventure! Your assignment, quite simply, is to implement in Scratch, at scratch.mit.edu, any project of your choice, be it an interactive story, game, animation, or anything else, subject only to the following requirements:
